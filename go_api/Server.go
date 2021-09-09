@@ -18,7 +18,7 @@ import (
 var MONGO_URL = "mongodb://cosmosdb-demo-so1:CUcb3p0RorNvnnM5doY4bMMcTZ03E5ehYzqqJ426SFaq0QQASSgFLVG7NYLd4E09x63FZh0xlVfwL2sAfnlHrg==@cosmosdb-demo-so1.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@cosmosdb-demo-so1@"
 
 func IndexHandler(w http.ResponseWriter, r *http.Request) {
-    w.Write([]byte("API GO - CLOUD RUN !\n"))
+    w.Write([]byte("API GO - CLOUD RUN ACTUALIZADO !\n"))
 }
 
 func hola(w http.ResponseWriter, r *http.Request) {
