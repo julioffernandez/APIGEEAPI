@@ -15,7 +15,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-var MONGO_URL = "mongodb://cosmosdb-demo-so1:CUcb3p0RorNvnnM5doY4bMMcTZ03E5ehYzqqJ426SFaq0QQASSgFLVG7NYLd4E09x63FZh0xlVfwL2sAfnlHrg==@cosmosdb-demo-so1.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@cosmosdb-demo-so1@"
+var MONGO_URL = "mongodb://cosmosdb-mongo-c8:qU6C9KaPIJ8DvEZ5VnueB7lAkFpnyuw9f2GOtU0PyasIXVVNVvsZWilXKaeJsXjn1JdkLPzy2rd20zpBWb9CNw==@cosmosdb-mongo-c8.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@cosmosdb-mongo-c8@"
 
 func IndexHandler(w http.ResponseWriter, r *http.Request) {
     w.Write([]byte("API GO - CLOUD RUN ACTUALIZADO !\n"))
