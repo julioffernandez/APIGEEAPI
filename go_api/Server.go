@@ -15,10 +15,10 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-var MONGO_URL = "mongodb://cosmosdb-mongo-c8:qU6C9KaPIJ8DvEZ5VnueB7lAkFpnyuw9f2GOtU0PyasIXVVNVvsZWilXKaeJsXjn1JdkLPzy2rd20zpBWb9CNw==@cosmosdb-mongo-c8.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@cosmosdb-mongo-c8@"
+var MONGO_URL = "mongodb://loadblancer-test:vy5p5TxuM8mqU7E2v2DGY108ZsulSCVHk0y87R5O8W6SWiy42UuJaaTdYUNTCEErVwp9b5bldNMGZm78TOhZrg==@loadblancer-test.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@loadblancer-test@"
 
 func IndexHandler(w http.ResponseWriter, r *http.Request) {
-    w.Write([]byte("API GO - CLOUD RUN ACTUALIZADO !\n"))
+    w.Write([]byte("API GO - CLOUD RUN ACTUALIZADO LBTESTER !\n"))
 }
 
 func hola(w http.ResponseWriter, r *http.Request) {
@@ -122,7 +122,7 @@ func main() {
 	router.HandleFunc("/hola", hola)
 	router.HandleFunc("/timestampinfo",timestamp_info).Methods("GET")
 	router.HandleFunc("/obtenerTodo",obtenerTodo).Methods("GET")
-	router.HandleFunc("/save",save).Methods("POST")
+	router.HandleFunc("/Save",save).Methods("POST")
     log.Println("Listening at port 2000") 
 	log.Fatal(http.ListenAndServe(":2000", router))
 }
